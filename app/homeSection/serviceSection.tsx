@@ -1,6 +1,8 @@
 
 import React from "react";
 import IconButton from "../components/ui/iconButton";
+import Image from "next/image";
+import Hand2 from '../public/hand2.svg'
 
 const ServiceSection = () => {
   return (
@@ -18,7 +20,7 @@ const ServiceSection = () => {
         <IconButton text="Our services" />
       </div>
       <div className="flex justify-end w-1/2">
-        <img src="./hand2.svg" alt="" />
+        <Image src={Hand2} alt="" />
       </div>
     </div>
   );

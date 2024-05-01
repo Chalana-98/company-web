@@ -1,12 +1,14 @@
 
 import React from "react";
 import IconButton from "../components/ui/iconButton";
+import Image from "next/image";
+import Hand1 from '../public/hand1.svg'
 
 const ProcessSection = () => {
   return (
     <div className="flex lg:flex-row text-[#EBEBEB] lg:justify-between lg:text-start md:flex md:flex-row md:justify-between md:text-start flex-col items-center justify-center text-center pb-10  max-w-screen-xl">
       <div className="w-1/2">
-        <img src="./hand1.svg" alt="" />
+        <Image src={Hand1} alt="" />
       </div>
 
       <div className="flex flex-col items-center lg:items-start md:items-start lg:w-1/2 md:w-1/2 sm:w-1/2">

@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+import Banner2 from '../public/bannersvg2.svg'
 
 function BottomBanner() {
     return (
@@ -17,7 +19,7 @@ function BottomBanner() {
                             Get in touch
                         </div>
                     </div>
-                    <img src="./bannersvg2.svg" alt="" className='mx-36 my-5' width={270} />
+                    <Image src={Banner2} alt="" className='mx-36 my-5' width={270} />
                 </div>
             </div>
         </>

@@ -1,4 +1,6 @@
 import React from "react";
+import Banner1 from "../../app/public/banner1.svg"
+import Image from "next/image";
 
 function MainBanner() {
   return (
@@ -15,7 +17,7 @@ function MainBanner() {
             unlock endless possibilities.
           </h3>
         </div>
-        <img src="./banner1.svg" alt="" />
+       <Image src={Banner1} alt={""}       />
       </div>
       <div className="my-20 text-[#EBEBEB]">
         <div className="text-center text-5xl">
