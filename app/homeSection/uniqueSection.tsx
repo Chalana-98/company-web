@@ -1,11 +1,17 @@
 
 import React from "react";
 import IconTextCard from "../components/ui/icon-text-card";
+import Vector1 from '../public/vector1.svg'
+import Vector2 from '../public/vector2.svg'
+import Vector3 from '../public/vector3.svg'
+import Vector4 from '../public/vector4.svg'
+import Vector5 from '../public/vector5.svg'
+import Vector6 from '../public/vector6.svg'
 
 function UniqueSection() {
   return (
     <>
-      <p className="text-4xl text-white dark:text-primaryDarkTextColor mb-10 text-center">
+      <p className="text-4xl text-[#EBEBEB] dark:text-primaryDarkTextColor mb-10 text-center">
         Why make us different
       </p>
       <div className="lg:grid lg:grid-cols-3  md:grid md:grid-cols-1 sm:flex sm:flex-col pb-10 text-[#EBEBEB]">
@@ -13,7 +19,7 @@ function UniqueSection() {
           <IconTextCard
             title="Success Redefined"
             content="Transformative Outcomes"
-            path="./vector1.svg"
+            path={Vector1}
           />
           <IconTextCard
             title={
@@ -28,7 +34,7 @@ function UniqueSection() {
                 <br /> tailored to your unique needs
               </>
             }
-            path="./vector4.svg"
+            path={Vector4}
           />
         </div>
         <div className="lg:flex lg:flex-col md:flex md:flex-row sm:grid sm:grid-cols-1">
@@ -39,7 +45,7 @@ function UniqueSection() {
                 Solve complex problems with <br /> elegant, intuitive solutions
               </>
             }
-            path="./vector2.svg"
+            path={Vector2}
           />
           <IconTextCard
             title="Efficiency Redefined"
@@ -49,7 +55,7 @@ function UniqueSection() {
                 <br /> Unmatched Productivity
               </>
             }
-            path="./vector5.svg"
+            path={Vector5}
           />
         </div>
         <div className="lg:flex lg:flex-col md:flex md:flex-row sm:grid sm:grid-cols-1">
@@ -61,7 +67,7 @@ function UniqueSection() {
                 <br /> Guaranteed
               </>
             }
-            path="./vector3.svg"
+            path={Vector3}
           />
           <IconTextCard
             title="Pushing Boundaries"
@@ -71,7 +77,7 @@ function UniqueSection() {
                 <br /> Standards with Innovation
               </>
             }
-            path="./vector6.svg"
+            path={Vector6}
           />
         </div>
       </div>

@@ -8,7 +8,7 @@ function BottomBanner() {
             <div className='max-w-screen-xl'>
 
 
-                <div className="flex flex-col rounded-[32px] border-2 border-bodercolor1  text-surface shadow-secondary-1 dark:text-white  xl:flex-row  my-16  py-14 ">
+                <div className="flex flex-col rounded-[32px] border-2 border-bodercolor1  text-surface shadow-secondary-1 dark:text-white  xl:flex-row  my-16  py-10 ">
                     <div className="flex flex-col justify-start p-6 mx-24 ">
 
                         <p className="mb-4 text-xl font-semibold tracking-wide">like what you’ve seen? </p>

@@ -5,7 +5,7 @@ import Image from "next/image";
 function MainBanner() {
   return (
     <>
-      <div className="flex flex-col rounded-[32px]  text-surface shadow-secondary-1 bg-gradient-to-t from-blue-700 to-blue-400 text-[#EBEBEB]  xl:flex-row max-w-screen-xl my-16 px-14 py-14">
+      <div className="flex flex-col rounded-[32px]  text-surface shadow-secondary-1 bg-gradient-to-t from-blue-800 to-blue-600 text-[#EBEBEB]  xl:flex-row max-w-screen-xl my-16 px-14 py-14">
         <div className="flex flex-col justify-start p-6 mx-5">
           <div className="border-2 max-w-48 text-center rounded-[40px] py-2 mb-8">
             Your Web Experts
