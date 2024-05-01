@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+import Banner2 from '../public/bannersvg2.svg'
 
 function BottomBanner() {
     return (
@@ -6,7 +8,7 @@ function BottomBanner() {
             <div className='max-w-screen-xl'>
 
 
-                <div className="flex flex-col rounded-[32px] border-2 border-bodercolor1  text-surface shadow-secondary-1 dark:text-white  xl:flex-row  my-16  py-14 ">
+                <div className="flex flex-col rounded-[32px] border-2 border-bodercolor1  text-surface shadow-secondary-1 dark:text-white  xl:flex-row  my-16  py-10 ">
                     <div className="flex flex-col justify-start p-6 mx-24 ">
 
                         <p className="mb-4 text-xl font-semibold tracking-wide">like what you’ve seen? </p>
@@ -17,7 +19,7 @@ function BottomBanner() {
                             Get in touch
                         </div>
                     </div>
-                    <img src="./bannersvg2.svg" alt="" className='mx-36 my-5' width={270} />
+                    <Image src={Banner2} alt="" className='mx-36 my-5' width={270} />
                 </div>
             </div>
         </>

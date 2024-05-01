@@ -3,7 +3,7 @@ import React from "react";
 const DevelopmentSection = () => {
   return (
     <>
-      <div className="flex border flex-col lg:mx-24 md:mx-24 mx-12  rounded-2xl relative mt-20">
+      <div className="flex border flex-col lg:mx-24 md:mx-24 mx-16  rounded-2xl relative mt-20 text-[#EBEBEB] max-w-screen">
         <img
           src="./serviceIcons/bg1.svg"
           alt=""
