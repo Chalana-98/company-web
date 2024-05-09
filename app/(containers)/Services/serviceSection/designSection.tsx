@@ -1,8 +1,19 @@
 import React from "react";
-import ServiceIcon1 from '../../../public/serviceIcons/bg1.svg'
 import Image from "next/image";
+import ServiceIcon1 from '../../../public/serviceIcons/bg1.svg'
 import ServiceIcon2 from '../../../public/serviceIcons/webmobileicon.svg'
 import SIcon1 from '../../../public/serviceIcons/Icon1.svg'
+import SIcon2 from '../../../public/serviceIcons/Icon2.svg'
+import SIcon3 from '../../../public/serviceIcons/Icon3.svg'
+import SIcon4 from '../../../public/serviceIcons/Icon4.svg'
+import SIcon5 from '../../../public/serviceIcons/Icon5.svg'
+import SIcon6 from '../../../public/serviceIcons/Icon6.svg'
+import SIcon7 from '../../../public/serviceIcons/Icon7.svg'
+import SIcon8 from '../../../public/serviceIcons/Icon8.svg'
+import SIcon9 from '../../../public/serviceIcons/Icon9.svg'
+import SIcon10 from '../../../public/serviceIcons/Icon10.svg'
+import SIcon11 from '../../../public/serviceIcons/Icon11.svg'
+import SIcon12 from '../../../public/serviceIcons/Icon12.svg'
 
 const DesignSection = () => {
   return (
@@ -52,8 +63,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon2.svg"
+              <Image
+                src={SIcon2}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -65,8 +76,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon3.svg"
+              <Image
+                src={SIcon3}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -78,8 +89,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon4.svg"
+              <Image
+                src={SIcon4}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -96,8 +107,8 @@ const DesignSection = () => {
         <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-y text-sm">
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon5.svg"
+              <Image
+                src={SIcon5}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -109,8 +120,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon6.svg"
+              <Image
+                src={SIcon6}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -122,8 +133,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon7.svg"
+              <Image
+                src={SIcon7}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -135,8 +146,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon8.svg"
+              <Image
+                src={SIcon8}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -153,8 +164,8 @@ const DesignSection = () => {
         <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-t text-sm">
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon9.svg"
+              <Image
+                src={SIcon9}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -166,8 +177,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon10.svg"
+              <Image
+                src={SIcon10}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -179,8 +190,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon11.svg"
+              <Image
+                src={SIcon11}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
@@ -192,8 +203,8 @@ const DesignSection = () => {
           </figure>
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
-              <img
-                src="./serviceIcons/icon12.svg"
+              <Image
+                src={SIcon12}
                 alt=""
                 className="lg:h-auto md:h-auto h-16"
               />
