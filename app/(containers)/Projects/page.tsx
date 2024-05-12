@@ -1,10 +1,14 @@
 import Footer from "@/app/components/utils/Footer";
 import Navbar from "@/app/components/utils/Navbar";
 import React from "react";
+
+import ProjectSelectionTabs from "./components/ProjectSelectionTabs";
+
 import HeaderSection from "./projectSection/HeaderSection";
 import KeyFeaturesSection from "./projectSection/KeyFeaturesSection";
 import BottomSection from "../Services/serviceSection/BottomSection";
 import UpcomingSection from "./projectSection/UpcomingSection";
+
 
 const ProjectsPage = () => {
   return (
@@ -13,10 +17,14 @@ const ProjectsPage = () => {
         <div className="absolute gradiant-1 top-20 right-16 -z-0  bg-gradient-to-r from-cyan-500 to-blue-500 w-full rotate-45 h-3 blur-3xl " />
         <Navbar />
         <div className="absolute top-15 right-16 -z-0 bottom-5 bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-10 blur-3xl " />
+
+        <ProjectSelectionTabs/>
+
         <HeaderSection/>
         <KeyFeaturesSection/>
         <UpcomingSection/>
         <BottomSection/>
+
         <Footer />
 
         <div className="absolute rotate-60  top-96  -z-10  bg-gradient-to-r from-blue-900 to-blue-800 blur-3xl w-full h-4  " />
