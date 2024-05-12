@@ -43,11 +43,11 @@ const DesignSection = () => {
           </p>
         </div>
 
-        <p className="text-gray-900 dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5 border-t">
+        <p className="text-[#98989A] dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5 border-t">
           User Experience (UX) Design
         </p>
 
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-y text-sm">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-y text-sm text-[#EBEBEB]">
           <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
@@ -56,12 +56,12 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="dark:text-secondaryDarkTextColor pt-8 text-[#EBEBEB] ">
                 User Research and Persona Development
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b text-[#EBEBEB] bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon2}
@@ -69,7 +69,7 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Information Architecture and Wireframing
               </p>
             </blockquote>
@@ -82,7 +82,7 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Interactive Prototyping and User Testing
               </p>
             </blockquote>
@@ -95,13 +95,13 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 UI Design and Visual Branding
               </p>
             </blockquote>
           </figure>
         </div>
-        <p className="text-gray-900 dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
+        <p className="text-[#98989A] dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
           User Interface (UI) Design
         </p>
         <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-y text-sm">
@@ -113,7 +113,7 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Intuitive and Visually Appealing Interface Design
               </p>
             </blockquote>
@@ -126,7 +126,7 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Custom Iconography and Illustration
               </p>
             </blockquote>
@@ -139,7 +139,7 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Typography and Color Palette Selection
               </p>
             </blockquote>
@@ -152,17 +152,17 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Responsive Design for Various Devices
               </p>
             </blockquote>
           </figure>
         </div>
-        <p className="text-gray-900 dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
+        <p className="text-[#98989A] dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
           Branding and Identity
         </p>
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-t text-sm">
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-t text-sm rounded-b-2xl ">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 rounded-bl-2xl  md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon9}
@@ -170,7 +170,7 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Logo Design and Visual Identity Development
               </p>
             </blockquote>
@@ -183,7 +183,7 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Brand Strategy and Positioning
               </p>
             </blockquote>
@@ -196,12 +196,12 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Brand Guidelines and Style Guides
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  rounded-br-2xl  dark:bg-gray-800 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon12}
@@ -209,7 +209,7 @@ const DesignSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-gray-900 dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] dark:text-secondaryDarkTextColor pt-8 ">
                 Marketing Collateral Design (Brochures, Business Cards, etc.)
               </p>
             </blockquote>
