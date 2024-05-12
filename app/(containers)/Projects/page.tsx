@@ -6,8 +6,10 @@ import ProjectSelectionTabs from "./components/ProjectSelectionTabs";
 
 import HeaderSection from "./projectSection/HeaderSection";
 import KeyFeaturesSection from "./projectSection/KeyFeaturesSection";
+
 import BottomSection from "../Services/serviceSection/BottomSection";
 import UpcomingSection from "./projectSection/UpcomingSection";
+
 
 
 const ProjectsPage = () => {
@@ -18,9 +20,21 @@ const ProjectsPage = () => {
         <Navbar />
         <div className="absolute top-15 right-16 -z-0 bottom-5 bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-10 blur-3xl " />
 
-        <ProjectSelectionTabs/>
+
 
         <HeaderSection/>
+        <KeyFeaturesSection/>
+        <ProjectSelectionTabs/>
+        <UpcomingSection/>
+        <BottomSection/>
+
+
+
+
+        <HeaderSection/>
+
+        <ProjectSelectionTabs/>
+
         <KeyFeaturesSection/>
         <UpcomingSection/>
         <BottomSection/>
