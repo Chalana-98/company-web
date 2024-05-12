@@ -15,9 +15,9 @@ const ProjectsPage = () => {
         <Navbar />
         <div className="absolute top-15 right-16 -z-0 bottom-5 bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-10 blur-3xl " />
 
-        <ProjectSelectionTabs/>
 
         <HeaderSection/>
+        <ProjectSelectionTabs/>
 
         <Footer />
 
