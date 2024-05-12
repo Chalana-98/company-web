@@ -17,6 +17,7 @@ const KeyFeaturesSection = () => {
           </p>
         </div>
         <p className="text-[#666666] text-center lg:px-20 py-5 lg:text-lg md:text-lg text-sm">
+
           Our Web Design service is all about creating visually stunning and
           user-friendly websites that leave a lasting impression on your
           audience. We blend creativity with functionality to deliver websites
@@ -24,19 +25,25 @@ const KeyFeaturesSection = () => {
           and optimal user experience.
         </p>
       </div>
+
       <div className="flex lg:flex-row flex-col">
+
         <KeyFeatureCard
           img={KeyImg1}
           title="Strategic Planning"
           content="Every project begins with thorough research and strategic planning to ensure a holistic understanding of our clients' objectives and target audience."
         />
+
         <div className="w-[1px] h-72 bg-[#1F1F1F] hidden lg:block"></div>
+
         <KeyFeatureCard
           img={KeyImg2}
           title="Customized Solutions"
           content="We believe in tailoring our services to suit each project's unique requirements, resulting in solutions that perfectly align with our clients' brand identities."
         />
+
         <div className="w-[1px] h-72 bg-[#1F1F1F] hidden lg:block" ></div>
+
 
         <KeyFeatureCard
           img={KeyImg3}

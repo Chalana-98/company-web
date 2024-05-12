@@ -7,6 +7,10 @@ import ProjectSelectionTabs from "./components/ProjectSelectionTabs";
 import HeaderSection from "./projectSection/HeaderSection";
 import KeyFeaturesSection from "./projectSection/KeyFeaturesSection";
 
+import BottomSection from "../Services/serviceSection/BottomSection";
+import UpcomingSection from "./projectSection/UpcomingSection";
+
+
 
 const ProjectsPage = () => {
   return (
@@ -28,7 +32,12 @@ const ProjectsPage = () => {
 
 
         <HeaderSection/>
+
         <ProjectSelectionTabs/>
+
+        <KeyFeaturesSection/>
+        <UpcomingSection/>
+        <BottomSection/>
 
         <Footer />
 
