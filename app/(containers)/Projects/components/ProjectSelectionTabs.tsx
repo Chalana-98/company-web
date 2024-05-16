@@ -9,7 +9,7 @@ export default function ProjectSelectionTabs() {
   const [selected, setSelected] = React.useState<string | number>("login");
   
   return (
-    <div className="flex flex-col max-w-screen-xl">
+    <div className="flex flex-col max-w-screen-xl my-5">
       <Card className=" max-w-screen-xl  text-[#EBEBEB]">
         <CardBody className="overflow-hidden">
           <Tabs
@@ -23,11 +23,14 @@ export default function ProjectSelectionTabs() {
             variant="solid"
           >
             <Tab key="login" title="Web & Mobile Design">
-            <TabContent title={"test"} description={"test"} path={ProjectImg1} readMoreLink={"bbb"}            
-            />
+              <TabContent 
+                group={[
+                  { title: "test", description: "test", path: ProjectImg1, readMoreLink: "bbb" },{title: "test22", description: "test111", path: ProjectImg1, readMoreLink: "bbb" },{title: "test2", description: "test111", path: ProjectImg1, readMoreLink: "bbb" }
+                ]}
+              />
             </Tab>
             <Tab key="sign-up" title="Web & Mobile Development">
-            <div>hello</div>
+              <div>hello</div>
             </Tab>
           </Tabs>
         </CardBody>
