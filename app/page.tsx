@@ -6,24 +6,29 @@ import ServiceSection from "./homeSection/serviceSection";
 import UniqueSection from "./homeSection/uniqueSection";
 import Footer from "./components/utils/Footer";
 import BottomBanner from "./homeSection/BottomBanner";
+import Background from "./public/background4.png"; // Import the background image
 
 export default function Home() {
   return (
-    <main className="">
-    <div className="relative z-10 flex min-h-screen flex-col items-center justify-between px-24 pt-24 bg-gradient-to-r from-[#0A0A27] to-[#151629]">
-    <div className="absolute gradiant-1 top-20 right-16 -z-0  bg-gradient-to-r from-cyan-500 to-blue-500 w-full rotate-45 h-3 blur-3xl "/>
-    <Navbar/>
-    <MainBanner/>
-    <UniqueSection/>
-    <ProcessSection/>
-    <div className="absolute top-15 right-16 -z-0 bottom-5 bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-10 blur-3xl "/>
-    <ServiceSection/>
-    <BottomBanner/>
-    <Footer/>
-
-    <div className="absolute rotate-60  top-96  -z-10  bg-gradient-to-r from-blue-900 to-blue-800 blur-3xl w-full h-4  "/>
-    </div>
-
+    <main className="relative z-10">
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${Background.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
+      <div className="relative z-20 flex flex-col items-center justify-between min-h-screen px-6 pt-24">
+        <Navbar />
+        <MainBanner />
+        <UniqueSection />
+        <ProcessSection />
+        <ServiceSection />
+        <BottomBanner />
+        <Footer />
+      </div>
     </main>
   );
 }
