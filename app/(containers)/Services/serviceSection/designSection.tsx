@@ -47,8 +47,8 @@ const DesignSection = () => {
           User Experience (UX) Design
         </p>
 
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-y text-sm text-[#EBEBEB]">
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 border-y text-sm text-[#EBEBEB]">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon1}
@@ -61,7 +61,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b text-[#EBEBEB] bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b text-[#EBEBEB] lg:border-r border-gray-200 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon2}
@@ -74,7 +74,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-r border-gray-200 md:border-b-0 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon3}
@@ -87,7 +87,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-gray-200  md:rounded-se-lg dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon4}
@@ -104,8 +104,8 @@ const DesignSection = () => {
         <p className="text-[#98989A] dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
           User Interface (UI) Design
         </p>
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-y text-sm">
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 border-y text-sm">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon5}
@@ -118,7 +118,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b lg:border-r border-gray-200 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon6}
@@ -131,7 +131,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-r border-gray-200 md:border-b-0 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon7}
@@ -144,7 +144,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-gray-200  md:rounded-se-lg dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon8}
@@ -161,8 +161,8 @@ const DesignSection = () => {
         <p className="text-[#98989A] dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
           Branding and Identity
         </p>
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-t text-sm rounded-b-2xl ">
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 rounded-bl-2xl  md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 border-t text-sm rounded-b-2xl ">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 lg:border-b-0 border-b border-gray-200 rounded-bl-2xl  md:rounded-ss-lg border-r dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon9}
@@ -175,7 +175,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b lg:border-r border-gray-200 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon10}
@@ -188,7 +188,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   border-r border-gray-200 md:border-b-0 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon11}
@@ -201,7 +201,7 @@ const DesignSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  rounded-br-2xl  dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-gray-200  rounded-br-2xl dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon12}

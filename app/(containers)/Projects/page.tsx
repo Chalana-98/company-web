@@ -4,11 +4,11 @@ import React from "react";
 
 import ProjectSelectionTabs from "./components/ProjectSelectionTabs";
 
-import HeaderSection from "./projectSection/HeaderSection";
 import KeyFeaturesSection from "./projectSection/KeyFeaturesSection";
 
 import BottomSection from "../Services/serviceSection/BottomSection";
 import UpcomingSection from "./projectSection/UpcomingSection";
+import { HeaderSection } from "./projectSection/HeaderSection";
 
 const ProjectsPage = () => {
   return (
@@ -18,7 +18,19 @@ const ProjectsPage = () => {
         <Navbar />
         <div className="absolute top-15 right-16 -z-0 bottom-5 bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-10 blur-3xl " />
 
-        <HeaderSection />
+        <HeaderSection
+          title="
+            Empowering Your Digital Vision
+            "
+          description="
+            At CoreDigit X, we propel your business with comprehensive digital
+            solutions. Skilled professionals, cutting-edge tech, and innovation
+            ensure exceptional results in web design and development At
+            CoreDigit X, we propel your business with comprehensive digital
+            solutions.
+            
+            "
+        />
         <KeyFeaturesSection />
         <ProjectSelectionTabs />
         <UpcomingSection />

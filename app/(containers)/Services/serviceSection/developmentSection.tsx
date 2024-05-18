@@ -1,19 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import ServiceIcon1 from '../../../public/serviceIcons/bg1.svg'
-import ServiceIcon2 from '../../../public/serviceIcons/webmobileicon2.svg'
-import SIcon13 from '../../../public/serviceIcons/Icon13.svg'
-import SIcon14 from '../../../public/serviceIcons/Icon14.svg'
-import SIcon15 from '../../../public/serviceIcons/Icon15.svg'
-import SIcon16 from '../../../public/serviceIcons/Icon16.svg'
-import SIcon17 from '../../../public/serviceIcons/Icon17.svg'
-import SIcon18 from '../../../public/serviceIcons/Icon18.svg'
-import SIcon19 from '../../../public/serviceIcons/Icon19.svg'
-import SIcon20 from '../../../public/serviceIcons/Icon20.svg'
-import SIcon21 from '../../../public/serviceIcons/Icon21.svg'
-import SIcon22 from '../../../public/serviceIcons/Icon22.svg'
-import SIcon23 from '../../../public/serviceIcons/Icon23.svg'
-import SIcon24 from '../../../public/serviceIcons/Icon24.svg'
+import ServiceIcon1 from "../../../public/serviceIcons/bg1.svg";
+import ServiceIcon2 from "../../../public/serviceIcons/webmobileicon2.svg";
+import SIcon13 from "../../../public/serviceIcons/Icon13.svg";
+import SIcon14 from "../../../public/serviceIcons/Icon14.svg";
+import SIcon15 from "../../../public/serviceIcons/Icon15.svg";
+import SIcon16 from "../../../public/serviceIcons/Icon16.svg";
+import SIcon17 from "../../../public/serviceIcons/Icon17.svg";
+import SIcon18 from "../../../public/serviceIcons/Icon18.svg";
+import SIcon19 from "../../../public/serviceIcons/Icon19.svg";
+import SIcon20 from "../../../public/serviceIcons/Icon20.svg";
+import SIcon21 from "../../../public/serviceIcons/Icon21.svg";
+import SIcon22 from "../../../public/serviceIcons/Icon22.svg";
+import SIcon23 from "../../../public/serviceIcons/Icon23.svg";
+import SIcon24 from "../../../public/serviceIcons/Icon24.svg";
 const DevelopmentSection = () => {
   return (
     <>
@@ -45,8 +45,8 @@ const DevelopmentSection = () => {
           Web Development
         </p>
 
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-y text-sm">
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 border-y text-sm">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r  dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon13}
@@ -59,7 +59,7 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b lg:border-r border-gray-200 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon14}
@@ -72,7 +72,7 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-r border-gray-200 md:border-b-0 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon15}
@@ -85,7 +85,7 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-gray-200  md:rounded-se-lg dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon16}
@@ -102,8 +102,8 @@ const DevelopmentSection = () => {
         <p className="text-[#98989A] dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
           Mobile App Development
         </p>
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-y text-sm ">
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 border-y text-sm ">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon17}
@@ -116,7 +116,7 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b lg:border-r border-gray-200 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon18}
@@ -129,7 +129,7 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-r border-gray-200 md:border-b-0 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon19}
@@ -142,7 +142,7 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-gray-200  md:rounded-se-lg dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon20}
@@ -160,8 +160,8 @@ const DevelopmentSection = () => {
         <p className="text-[#98989A] dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
           Custom Software Development Enterprise Software Development
         </p>
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 bg-white dark:bg-gray-800 border-t text-sm rounded-b-2xl ">
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5  bg-white lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:bg-gray-800 dark:border-gray-700 rounded-b-2xl">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 border-t text-sm rounded-b-2xl ">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:border-gray-700 rounded-b-2xl">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon21}
@@ -174,7 +174,7 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b bg-white lg:border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   lg:border-b-0 border-b lg:border-r border-gray-200 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon22}
@@ -187,7 +187,7 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-r border-gray-200 md:border-b-0 dark:bg-gray-800 dark:border-gray-700">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 border-r border-gray-200 md:border-b-0 dark:border-gray-700">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon23}
@@ -200,8 +200,8 @@ const DevelopmentSection = () => {
               </p>
             </blockquote>
           </figure>
-       
-          <figure className="flex flex-col  items-center justify-center lg:p-10 md:p-10 p-5   bg-white border-gray-200  dark:bg-gray-800 dark:border-gray-700  rounded-br-2xl">
+
+          <figure className="flex flex-col  items-center justify-center lg:p-10 md:p-10 p-5 border-gray-200 dark:border-gray-700  rounded-br-2xl">
             <blockquote className="text-gray-500 dark:text-gray-400 rounded-br-2xl ">
               <Image
                 src={SIcon24}
