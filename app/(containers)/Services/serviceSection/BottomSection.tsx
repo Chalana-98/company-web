@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import service_sqaure from "../../../public/serviceIcons/service_sqaure.svg";
 import Frame1 from "../../../public/Frame 1.png";
 
 const BottomSection = () => {
