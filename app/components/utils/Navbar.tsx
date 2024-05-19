@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Modal from "./ViewContactUs";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);

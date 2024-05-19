@@ -17,7 +17,7 @@ import SIcon24 from "../../../public/serviceIcons/Icon24.svg";
 const DevelopmentSection = () => {
   return (
     <>
-      <div className="flex border flex-col lg:mx-24 md:mx-24 mx-16  rounded-2xl relative mt-20 text-[#EBEBEB] max-w-screen">
+      <div className="flex border flex-col lg:mx-24 md:mx-24 mx-16  rounded-2xl relative mt-20 text-[#EBEBEB] max-w-screen mb-10">
         <Image
           src={ServiceIcon1}
           alt=""
@@ -150,7 +150,7 @@ const DevelopmentSection = () => {
                 className="lg:h-auto md:h-auto h-16"
               />
 
-              <p className="text-[#EBEBEB]dark:text-secondaryDarkTextColor pt-8 ">
+              <p className="text-[#EBEBEB] pt-8 ">
                 App Testing, Deployment, and Maintenance Custom Software
                 Development
               </p>
@@ -160,8 +160,8 @@ const DevelopmentSection = () => {
         <p className="text-[#98989A] dark:text-secondaryDarkTextColor lg:p-10 md:p-10 p-5">
           Custom Software Development Enterprise Software Development
         </p>
-        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 border-t text-sm rounded-b-2xl ">
-          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:border-gray-700 rounded-b-2xl">
+        <div className="grid border-gray-200 shadow-sm dark:border-gray-700 grid-cols-2 lg:grid-cols-4 border-t text-sm ">
+          <figure className="flex flex-col items-center justify-center lg:p-10 md:p-10 p-5 lg:border-b-0 border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg border-r dark:border-gray-700 ">
             <blockquote className="text-gray-500 dark:text-gray-400">
               <Image
                 src={SIcon21}

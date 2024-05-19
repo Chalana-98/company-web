@@ -19,7 +19,7 @@ export const StepCard: React.FC<StepCardProps> = ({
     
         <div className="flex flex-col">
           <p className="text-[#98989A] lg:text-lg md:text-lg pl-3">{title}</p>
-          <div className="h-[1px] lg:w-60 md:w-52 w-40 bg-[#98989A] mt-3"></div>
+          <div className="h-[1px] lg:w-60 md:w-52 w-40 bg-[#98989A] mt-3 mb-3"></div>
         </div>
       </div>
       <p className="text-[#98989A] pt-8 lg:text-start md:text-start text-center">

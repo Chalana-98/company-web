@@ -25,42 +25,33 @@ const UpcomingSection = () => {
         </p>
       </div>
 
-      <div className="max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-10">
         <div className="flex flex-row justify-around items-center pb-5">
           <Image src={UpcomingImg1} alt={""} className="" />
 
-          <p className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white pl-3">
+          <p className="mb-2 lg:text-2xl md:text-2xl text-xl font-semibold tracking-tight text-gray-900 dark:text-white pl-3">
             Healthcare Platform Enhancement
           </p>
         </div>
-        <div className="flex lg:flex-row md:flex-row flex-col border-[1px] border-[#666666] rounded-xl justify-around px-5 py-5">
-          <div className="flex flex-col items-start">
+        <div className="flex lg:flex-row md:flex-row flex-col border-[1px] border-[#666666] rounded-xl justify-around px-5 py-5 items-center">
+          <div className="flex flex-col lg:items-start md:items-start items-center">
             <p className="text-[#666666] text-center lg:text-sm md:text-sm  text-xs">
               Category
             </p>
             <p className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              Web{" "}
-              <>
-                <br />
-              </>
-              Development
+              Web Development
             </p>
           </div>
 
           <div className="w-[1px] h-20 bg-[#666666] mx-5 lg:block md:block hidden"></div>
-          <div className="w-28 h-[1px] bg-[#666666] lg:hidden md:hidden block"></div>
-          <div className="flex flex-row justify-start items-start">
-            <div className="flex flex-col items-start">
-              <p className="text-[#666666] text-center lg:text-sm md:text-sm  text-xs">
-                Expected
-              </p>
-              <p className="text-[#666666] text-center lg:text-sm md:text-sm  text-xs">
-                Completion
-              </p>
-              <p className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Q4 2023
-              </p>
-            </div>
+          <div className="w-60 h-[1px] bg-[#666666] lg:hidden md:hidden block"></div>
+          <div className="flex flex-col lg:items-start md:items-start items-center">
+            <p className="text-[#666666] text-center lg:text-sm md:text-sm  text-xs">
+              Expected Completion
+            </p>
+            <p className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Q4 2023
+            </p>
           </div>
         </div>
 

@@ -11,7 +11,7 @@ const ProcessPage = () => {
         <Navbar />
         <div className="absolute top-15 right-16 -z-0 bottom-5 bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-10 blur-3xl " />
         <HeaderSection
-          title="Process of stating the project"
+          title="Process of starting the project"
           description=" At CoreDigit X, we propel your business with comprehensive digital solutions. Skilled professionals, cutting-edge tech, and innovation ensure exceptional results in web design and development At CoreDigit X, we propel your business with comprehensive digital solutions. Skilled professionals, "
         />
         <StepsSection/>

@@ -1,12 +1,11 @@
-
 import React from "react";
 import IconTextCard from "../components/ui/icon-text-card";
-import Vector1 from '../public/vector1.svg'
-import Vector2 from '../public/vector2.svg'
-import Vector3 from '../public/vector3.svg'
-import Vector4 from '../public/vector4.svg'
-import Vector5 from '../public/vector5.svg'
-import Vector6 from '../public/vector6.svg'
+import Vector1 from "../public/vector1.svg";
+import Vector2 from "../public/vector2.svg";
+import Vector3 from "../public/vector3.svg";
+import Vector4 from "../public/vector4.svg";
+import Vector5 from "../public/vector5.svg";
+import Vector6 from "../public/vector6.svg";
 
 function UniqueSection() {
   return (
@@ -22,19 +21,14 @@ function UniqueSection() {
             path={Vector1}
           />
           <IconTextCard
-            title={
-              <>
-                Customized Technology
-                <br /> Solutions
-              </>
-            }
+            title="Efficiency Redefined"
             content={
               <>
-                Cutting-edge technology
-                <br /> tailored to your unique needs
+                Streamlined Processes,
+                <br /> Unmatched Productivity
               </>
             }
-            path={Vector4}
+            path={Vector5}
           />
         </div>
         <div className="lg:flex lg:flex-col md:flex md:flex-row sm:grid sm:grid-cols-1">
@@ -48,14 +42,19 @@ function UniqueSection() {
             path={Vector2}
           />
           <IconTextCard
-            title="Efficiency Redefined"
-            content={
+            title={
               <>
-                Streamlined Processes,
-                <br /> Unmatched Productivity
+                Customized Technology
+                <br /> Solutions
               </>
             }
-            path={Vector5}
+            content={
+              <>
+                Cutting-edge technology
+                <br /> tailored to your unique needs
+              </>
+            }
+            path={Vector4}
           />
         </div>
         <div className="lg:flex lg:flex-col md:flex md:flex-row sm:grid sm:grid-cols-1">
