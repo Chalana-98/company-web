@@ -10,7 +10,7 @@ import Vector6 from "../public/vector6.svg";
 function UniqueSection() {
   return (
     <>
-      <p className="text-4xl text-[#EBEBEB] dark:text-primaryDarkTextColor mb-10 text-center">
+      <p className="lg:text-4xl md:text-3xl text-2xl text-[#EBEBEB] dark:text-primaryDarkTextColor lg:mb-10 md:mb-8 mb-5 text-center">
         Why make us different
       </p>
       <div className="lg:grid lg:grid-cols-3  md:grid md:grid-cols-1 sm:flex sm:flex-col pb-10 text-[#EBEBEB]">
