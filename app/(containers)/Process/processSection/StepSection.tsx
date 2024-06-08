@@ -4,7 +4,7 @@ import { StepCard } from "./StepCard";
 const StepsSection = () => {
   return (
     <>
-      <div className="flex border flex-col lg:mx-24 md:mx-24 rounded-2xl text-[#EBEBEB] max-w-screen ">
+      <div className="flex border flex-col lg:mx-24 md:mx-24 rounded-2xl text-[#EBEBEB] max-w-screen-xl">
         <div className="flex flex-col items-center lg:items-start md:items-start ijustify-center mx-auto lg:mt-12 md:mt-10 my-8 lg:px-20 md:px-16 px-10 lg:py-5 md:py-8">
           <p className="dark:text-primarybgColor text-primaryTextColor font-semibold lg:text-2xl md:text-2xl text-xl  ">
             At Square Up

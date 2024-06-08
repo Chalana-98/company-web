@@ -1,20 +1,15 @@
 "use client";
 import React, { useState } from "react";
-import Modal from "./ViewContactUs";
+import Modal from "./contactModal/ViewContactUs";
 import Link from "next/link";
 import Image from "next/image";
 
-const Navbar: React.FC = () => {
+interface ModalProps {
+  handleShowModal: () => void;
+}
+
+const Navbar: React.FC<ModalProps> = ({ handleShowModal }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
@@ -22,7 +17,6 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
       <nav className="fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 backdrop-blur-md bg-white/30 dark:bg-gray-900/30">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
@@ -42,7 +36,7 @@ const Navbar: React.FC = () => {
             <button
               type="button"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              onClick={openModal}
+              onClick={handleShowModal}
             >
               Contact Us
             </button>
@@ -73,7 +67,9 @@ const Navbar: React.FC = () => {
             </button>
           </div>
           <div
-            className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isCollapsed ? "hidden" : ""}`}
+            className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
+              isCollapsed ? "hidden" : ""
+            }`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">

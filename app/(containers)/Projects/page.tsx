@@ -1,5 +1,4 @@
 import Footer from "@/app/components/utils/Footer";
-import Navbar from "@/app/components/utils/Navbar";
 import React from "react";
 
 import ProjectSelectionTabs from "./components/ProjectSelectionTabs";
@@ -15,7 +14,7 @@ const ProjectsPage = () => {
     <main className="">
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-between lg:px-24 md:px-24 px-12 pt-24 bg-gradient-to-r from-[#0A0A27] to-[#151629]">
         <div className="absolute gradiant-1 top-20 right-16 -z-0  bg-gradient-to-r from-cyan-500 to-blue-500 w-full rotate-45 h-3 blur-3xl " />
-        <Navbar />
+ 
         <div className="absolute top-15 right-16 -z-0 bottom-5 bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-10 blur-3xl " />
 
         <HeaderSection

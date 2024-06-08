@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./components/utils/Navbar";
 import MainBanner from "./homeSection/MainBanner";
 import ProcessSection from "./homeSection/processSection";
@@ -7,6 +6,7 @@ import UniqueSection from "./homeSection/uniqueSection";
 import Footer from "./components/utils/Footer";
 import BottomBanner from "./homeSection/BottomBanner";
 import Background from "./public/background4.png"; // Import the background image
+import { useState } from "react";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         }}
       ></div>
       <div className="relative z-20 flex flex-col items-center justify-between min-h-screen px-6 pt-24">
-        <Navbar />
+        
         <MainBanner />
         <UniqueSection />
         <ProcessSection />
