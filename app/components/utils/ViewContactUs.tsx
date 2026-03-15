@@ -98,6 +98,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   const [form, setForm] = useState<FormState>(EMPTY_FORM);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [sendError, setSendError] = useState<string | null>(null);
 
   const handleChange = (key: keyof FormState, value: string) => {
     setForm((prev) => ({ ...prev, [key]: value }));
@@ -106,14 +107,31 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // Replace with your email service: EmailJS, Resend, SendGrid, etc.
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSubmitted(true);
+    setSendError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await res.json() as { error?: string };
+        setSendError(data.error ?? "Something went wrong. Please try again.");
+      }
+    } catch {
+      setSendError("Network error — please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleClose = () => {
     setSubmitted(false);
+    setSendError(null);
     setForm(EMPTY_FORM);
     onClose();
   };
@@ -303,6 +321,11 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                       >
                         {loading ? "Sending…" : "Send Message"}
                       </Button>
+
+                      {/* Error feedback */}
+                      {sendError && (
+                        <p className="text-sm text-red-500 text-center mt-1">{sendError}</p>
+                      )}
                     </form>
                   </>
                 )}
