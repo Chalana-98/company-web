@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import React from 'react';
-import Banner2 from '../public/bannersvg2.svg';
+import Banner2 from '../../public/bannersvg2.svg';
 import { Button } from '@nextui-org/react';
 import { motion } from 'framer-motion';
 

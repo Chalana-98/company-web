@@ -1,15 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import {
-  Navbar as NextUINavbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-  Button
-} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import Modal from "./ViewContactUs";
 import { ThemeSwitcher } from "./ThemeSwitcher";
@@ -58,12 +49,12 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Links (Centered) */}
-          <div className="hidden sm:flex items-center gap-1 bg-zinc-100/50 dark:bg-white/5 p-1 rounded-full border border-zinc-200/50 dark:border-white/5 shadow-inner">
+          <div className="hidden sm:flex items-center gap-1">
             {menuItems.map((item, index) => (
               <Link
                 key={`${item.label}-${index}`}
                 href={item.href}
-                className="relative px-5 py-2 text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-foreground transition-all rounded-full hover:bg-white/80 dark:hover:bg-white/10"
+                className="relative px-5 py-2 text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-foreground transition-all rounded-full hover:bg-zinc-100 dark:hover:bg-white/10"
               >
                 {item.label}
               </Link>
@@ -77,7 +68,7 @@ const Navbar: React.FC = () => {
              </div>
              <Button
                color="primary"
-               onClick={openModal}
+               onPress={openModal}
                className="font-bold px-6 py-2 h-auto rounded-full bg-foreground text-background hover:scale-105 transition-transform shadow-lg hidden sm:flex"
              >
                Let&apos;s Talk
@@ -108,7 +99,7 @@ const Navbar: React.FC = () => {
           </div>
           <Button
              color="primary"
-             onClick={() => { openModal(); setIsMenuOpen(false); }}
+             onPress={() => { openModal(); setIsMenuOpen(false); }}
              className="w-full font-bold py-6 text-lg rounded-full mt-4"
            >
              Contact Us Now

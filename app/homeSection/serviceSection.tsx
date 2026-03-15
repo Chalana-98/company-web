@@ -2,8 +2,14 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
-
+import { Cloud, Code2, PenTool } from "lucide-react";
 import { motion } from "framer-motion";
+
+const pillars = [
+  { icon: <PenTool size={16} />, label: "Web & Mobile Design" },
+  { icon: <Code2 size={16} />, label: "Engineering & Development" },
+  { icon: <Cloud size={16} />, label: "Cloud Native & SaaS" },
+];
 
 const ServiceSection = () => {
   return (
@@ -24,7 +30,7 @@ const ServiceSection = () => {
               animate={{ y: [-10, 10, -10] }}
               transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
             >
-              <Image src="/tech_solutions.png" alt="All in one solution" width={400} height={400} className="w-full max-w-sm rounded-[2rem] drop-shadow-[0_0_30px_rgba(var(--nextui-secondary),0.5)] object-cover" />
+              <Image src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop" alt="All in one solution" width={400} height={400} className="w-full h-[400px] max-w-sm rounded-[2rem] drop-shadow-[0_0_30px_rgba(var(--nextui-secondary),0.5)] object-cover" />
             </motion.div>
           </div>
         </motion.div>
@@ -44,11 +50,21 @@ const ServiceSection = () => {
             Your all-in-one <br/>solution with us
           </h2>
 
-          <p className="text-foreground/70 pb-10 lg:text-lg md:text-base text-base font-medium max-w-lg leading-relaxed">
+          <p className="text-foreground/70 pb-6 lg:text-lg md:text-base text-base font-medium max-w-lg leading-relaxed">
             From initial consultation to final execution, we&apos;ve got you covered. Streamline
             your operations and maximize efficiency with our comprehensive all-in-one
             services tailored for modern businesses.
           </p>
+
+          {/* Service pillars */}
+          <div className="flex flex-wrap gap-3 pb-10">
+            {pillars.map((p) => (
+              <div key={p.label} className="flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-divider text-sm font-semibold text-foreground/70 shadow-sm">
+                <span className="text-primary">{p.icon}</span>
+                {p.label}
+              </div>
+            ))}
+          </div>
           
           <Button 
             color="primary" 

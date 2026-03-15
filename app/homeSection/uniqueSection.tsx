@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import IconTextCard from "../components/ui/icon-text-card";
-import { Rocket, Settings2, Infinity, Zap, ShieldCheck, Globe } from "lucide-react";
+import { Rocket, Settings2, Infinity, Zap, ShieldCheck, Globe, Cloud } from "lucide-react";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -52,6 +52,14 @@ function UniqueSection() {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[1fr]"
         >
+             <motion.div variants={itemVariants} className="lg:col-span-3">
+            <IconTextCard
+              title="Cloud Native & SaaS Development"
+              content="We design and ship production-ready cloud platforms — from multi-tenant SaaS architectures to full DevOps pipelines on AWS, GCP, and Azure. Scale confidently from day one."
+              icon={<Cloud size={40} />}
+              className="h-full bg-gradient-to-br from-violet-500/10 to-transparent"
+            />
+          </motion.div>
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <IconTextCard
               title="Success Redefined"
@@ -105,6 +113,8 @@ function UniqueSection() {
               className="h-full bg-content2/80"
             />
           </motion.div>
+
+       
           
         </motion.div>
       </div>

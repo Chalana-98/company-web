@@ -24,7 +24,7 @@ const ProcessSection = () => {
               animate={{ y: [-10, 10, -10] }}
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
             >
-              <Image src="/digital_collaboration.png" alt="Digital Collaboration" width={400} height={400} className="w-full max-w-sm rounded-[2rem] drop-shadow-[0_0_30px_rgba(var(--nextui-primary),0.5)] object-cover" />
+              <Image src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" alt="Digital Collaboration" width={400} height={400} className="w-full h-[400px] max-w-sm rounded-[2rem] drop-shadow-[0_0_30px_rgba(var(--nextui-primary),0.5)] object-cover" />
             </motion.div>
           </div>
         </motion.div>

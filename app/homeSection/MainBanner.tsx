@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
 
+import BannerImg from "../../public/mainbannerimage.jpeg";
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -23,11 +25,7 @@ const itemVariants = {
 
 function MainBanner() {
   return (
-    <section className="relative w-full flex flex-col items-center pt-24 pb-32 overflow-hidden">
-      {/* Abstract Glowing Backgrounds */}
-      <div className="absolute top-1/4 left-1/4 w-[50vw] h-[50vw] bg-primary/20 rounded-full blur-[120px] -z-10 mix-blend-screen opacity-50 dark:opacity-30 pointer-events-none transform -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute top-1/3 right-1/4 w-[40vw] h-[40vw] bg-cyan-500/20 rounded-full blur-[100px] -z-10 mix-blend-screen opacity-50 dark:opacity-30 pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
-
+    <section className="relative w-full flex flex-col items-center pt-24 pb-32">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -66,16 +64,7 @@ function MainBanner() {
             </Button>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="mt-12 flex items-center gap-4 text-foreground/50 text-sm font-medium">
-            <div className="flex -space-x-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-10 h-10 rounded-full border-2 border-background bg-content2 flex items-center justify-center overflow-hidden">
-                  <span className="text-xs font-bold text-foreground/40">{i}</span>
-                </div>
-              ))}
-            </div>
-            <span>Trusted by 100+ innovative companies</span>
-          </motion.div>
+         
         </div>
 
         <motion.div 
@@ -83,16 +72,23 @@ function MainBanner() {
           className="flex-1 relative w-full max-w-lg lg:max-w-none mt-12 lg:mt-0"
         >
           <div className="relative aspect-square w-full">
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-cyan-500/20 rounded-[4rem] rotate-6 scale-105 blur-xl"></div>
-            <div className="absolute inset-0 bg-zinc-100/50 dark:bg-content1 border border-zinc-200 dark:border-divider rounded-[4rem] shadow-2xl flex items-center justify-center overflow-hidden backdrop-blur-sm">
-               {/* 3D or Graphic Element Placeholder */}
-               <motion.div
-                 animate={{ y: [-10, 10, -10] }}
-                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-               >
-                 <Image src="/abstract_tech_hero.png" alt="3D Abstract Tech Hero" width={500} height={500} priority className="w-full max-w-lg drop-shadow-[0_0_30px_rgba(var(--nextui-primary),0.8)] rounded-[2rem] object-cover" />
-               </motion.div>
-            </div>
+            {/* Subtle glow behind */}
+            <div className="absolute inset-4 bg-gradient-to-tr from-primary/30 to-cyan-500/30 rounded-[2rem] blur-2xl opacity-60 pointer-events-none"></div>
+            {/* Entire card floats as one unit — no border gap */}
+            <motion.div
+              animate={{ y: [-10, 10, -10] }}
+              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+              className="relative rounded-[2rem] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] dark:shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
+            >
+              <Image
+                src={BannerImg}
+                alt="3D Abstract Tech Hero"
+                width={600}
+                height={600}
+                priority
+                className="w-full h-auto object-cover block"
+              />
+            </motion.div>
           </div>
         </motion.div>
       </motion.div>
