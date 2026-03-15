@@ -1,117 +1,120 @@
 "use client";
 import React, { useState } from "react";
-import Modal from "./ViewContactUs";
+import {
+  Navbar as NextUINavbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Button
+} from "@nextui-org/react";
 import Link from "next/link";
+import Modal from "./ViewContactUs";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const Navbar: React.FC = () => {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
+  const menuItems = [
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/Services" },
+    { label: "Projects", href: "/Projects" },
+    { label: "Process", href: "/Process" },
+  ];
 
   return (
     <>
       <Modal isOpen={isModalOpen} onClose={closeModal} />
-      <nav className="fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 backdrop-blur-md bg-white/30 dark:bg-gray-900/30">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
-          </a>
-          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      
+      {/* Container to center the floating pill */}
+      <div className="fixed top-6 inset-x-0 mx-auto w-full max-w-[1000px] px-4 z-50 flex justify-center">
+        <nav className="w-full flex items-center justify-between px-6 py-3 bg-white/70 dark:bg-black/50 backdrop-blur-2xl border border-white/20 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.08)] rounded-full">
+          
+          {/* Brand */}
+          <div className="flex items-center gap-4">
             <button
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              onClick={openModal}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="sm:hidden p-2 text-foreground flex flex-col gap-1.5 focus:outline-none"
+              aria-label="Toggle Menu"
             >
-              Contact Us
+              <div className={`w-5 h-0.5 bg-current transition-all ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`}></div>
+              <div className={`w-5 h-0.5 bg-current transition-all ${isMenuOpen ? "opacity-0" : ""}`}></div>
+              <div className={`w-5 h-0.5 bg-current transition-all ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}></div>
             </button>
+            <Link href="/" className="select-none flex items-center gap-2">
+              <span className="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-cyan-500 flex items-center justify-center text-white font-bold text-sm shadow-md">
+                CX
+              </span>
+              <span className="font-extrabold text-foreground text-xl tracking-tighter hidden md:block">
+                CoreDigit X
+              </span>
+            </Link>
+          </div>
 
-            <button
-              type="button"
-              onClick={toggleCollapse}
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded={!isCollapsed}
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
+          {/* Desktop Links (Centered) */}
+          <div className="hidden sm:flex items-center gap-1 bg-zinc-100/50 dark:bg-white/5 p-1 rounded-full border border-zinc-200/50 dark:border-white/5 shadow-inner">
+            {menuItems.map((item, index) => (
+              <Link
+                key={`${item.label}-${index}`}
+                href={item.href}
+                className="relative px-5 py-2 text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-foreground transition-all rounded-full hover:bg-white/80 dark:hover:bg-white/10"
               >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
+                {item.label}
+              </Link>
+            ))}
           </div>
-          <div
-            className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isCollapsed ? "hidden" : ""}`}
-            id="navbar-sticky"
-          >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-              <li>
-                <Link
-                  href="/"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Services"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/Projects"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="/Process"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Our Process
-                </a>
-              </li>
-            </ul>
+
+          {/* Right Actions */}
+          <div className="flex items-center gap-3">
+             <div className="hidden sm:block pl-2 border-l border-divider/50">
+               <ThemeSwitcher />
+             </div>
+             <Button
+               color="primary"
+               onClick={openModal}
+               className="font-bold px-6 py-2 h-auto rounded-full bg-foreground text-background hover:scale-105 transition-transform shadow-lg hidden sm:flex"
+             >
+               Let&apos;s Talk
+             </Button>
           </div>
+        </nav>
+      </div>
+
+      {/* Mobile Menu Backdrop */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-background/95 backdrop-blur-3xl sm:hidden pt-32 px-6 flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
+            {menuItems.map((item, index) => (
+              <Link
+                key={`${item.label}-${index}`}
+                className="w-full text-foreground/80 text-3xl font-bold hover:text-primary transition-colors py-4 border-b border-divider/30 flex justify-between items-center"
+                href={item.href}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+                <span className="text-xl opacity-50">→</span>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 flex items-center justify-between">
+            <span className="text-lg font-medium">Theme</span>
+            <ThemeSwitcher />
+          </div>
+          <Button
+             color="primary"
+             onClick={() => { openModal(); setIsMenuOpen(false); }}
+             className="w-full font-bold py-6 text-lg rounded-full mt-4"
+           >
+             Contact Us Now
+           </Button>
         </div>
-      </nav>
+      )}
     </>
   );
 };
