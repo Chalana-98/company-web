@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 import { Cloud, Code2, PenTool } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -66,14 +67,16 @@ const ServiceSection = () => {
             ))}
           </div>
           
-          <Button 
-            color="primary" 
-            variant="flat"
-            size="lg" 
-            className="font-semibold px-8 border border-primary/50 shadow-lg shadow-primary/20 rounded-full hover:scale-105 transition-transform"
-          >
-            Discover Services
-          </Button>
+          <Link href="/Services">
+            <Button 
+              color="primary" 
+              variant="flat"
+              size="lg" 
+              className="font-semibold px-8 border border-primary/50 shadow-lg shadow-primary/20 rounded-full hover:scale-105 transition-transform"
+            >
+              Discover Services
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

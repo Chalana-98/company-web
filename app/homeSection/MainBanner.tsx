@@ -2,8 +2,10 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import { openContactModal } from "../components/utils/openContactModal";
 
 import BannerImg from "../../public/mainbannerimage.jpeg";
 
@@ -51,17 +53,20 @@ function MainBanner() {
             <Button 
               color="primary" 
               size="lg" 
+              onPress={openContactModal}
               className="w-full sm:w-auto px-10 py-7 text-lg font-semibold shadow-2xl shadow-primary/30 rounded-full hover:scale-105 transition-transform"
             >
               Get Started Now
             </Button>
-            <Button 
-              variant="bordered" 
-              size="lg" 
-              className="w-full sm:w-auto px-10 py-7 text-lg font-semibold rounded-full border-2 hover:bg-foreground/5 transition-colors"
-            >
-              View Our Work
-            </Button>
+            <Link href="/Projects">
+              <Button 
+                variant="bordered" 
+                size="lg" 
+                className="w-full sm:w-auto px-10 py-7 text-lg font-semibold rounded-full border-2 hover:bg-foreground/5 transition-colors"
+              >
+                View Our Work
+              </Button>
+            </Link>
           </motion.div>
 
          

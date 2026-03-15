@@ -86,8 +86,8 @@ export default function ServicesPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {designServices.map((service) => (
-                <div key={service.title} className="flex flex-col items-start text-left">
-                  <div className="w-12 h-12 rounded-xl bg-background border border-divider flex items-center justify-center text-foreground mb-4 shadow-sm">
+                <div key={service.title} className="flex flex-col items-start text-left group">
+                  <div className="w-12 h-12 rounded-xl bg-background border border-divider flex items-center justify-center text-primary mb-4 shadow-sm group-hover:bg-primary/10 transition-colors">
                     {service.icon}
                   </div>
                   <h3 className="font-semibold text-lg mb-2">{service.title}</h3>
@@ -118,8 +118,8 @@ export default function ServicesPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-12">
               {devServices.map((service) => (
-                <div key={service.title} className="flex flex-col items-start text-left">
-                  <div className="w-12 h-12 rounded-xl bg-background border border-divider flex items-center justify-center text-foreground mb-4 shadow-sm">
+                <div key={service.title} className="flex flex-col items-start text-left group">
+                  <div className="w-12 h-12 rounded-xl bg-background border border-divider flex items-center justify-center text-cyan-500 mb-4 shadow-sm group-hover:bg-cyan-500/10 transition-colors">
                     {service.icon}
                   </div>
                   <h3 className="font-semibold text-lg mb-2">{service.title}</h3>

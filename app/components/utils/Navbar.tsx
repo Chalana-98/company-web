@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import Modal from "./ViewContactUs";
@@ -11,6 +11,13 @@ const Navbar: React.FC = () => {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  // Listen for the global "open-contact-modal" event fired from any page button
+  useEffect(() => {
+    const handler = () => openModal();
+    globalThis.addEventListener("open-contact-modal", handler);
+    return () => globalThis.removeEventListener("open-contact-modal", handler);
+  }, []);
 
   const menuItems = [
     { label: "Home", href: "/" },

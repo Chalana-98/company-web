@@ -19,7 +19,7 @@ export function ThemeSwitcher() {
       <Switch
         isSelected={theme === "light"}
         size="md"
-        color="secondary"
+        color="primary"
         onValueChange={(isSelected) => setTheme(isSelected ? "light" : "dark")}
         startContent={<span className="text-xl">☀️</span>}
         endContent={<span className="text-xl">🌙</span>}

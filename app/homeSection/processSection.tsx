@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
-
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const ProcessSection = () => {
@@ -51,13 +51,15 @@ const ProcessSection = () => {
             perfect software solution.
           </p>
           
-          <Button 
-            color="primary" 
-            size="lg" 
-            className="font-semibold px-8 shadow-lg shadow-primary/30 rounded-full hover:scale-105 transition-transform"
-          >
-            Explore Our Process
-          </Button>
+          <Link href="/Process">
+            <Button 
+              color="primary" 
+              size="lg" 
+              className="font-semibold px-8 shadow-lg shadow-primary/30 rounded-full hover:scale-105 transition-transform"
+            >
+              Explore Our Process
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -1,9 +1,11 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import Banner2 from '../../public/bannersvg2.svg';
 import { Button } from '@nextui-org/react';
 import { motion } from 'framer-motion';
+import { openContactModal } from '../components/utils/openContactModal';
 
 function BottomBanner() {
     return (
@@ -48,18 +50,21 @@ function BottomBanner() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
                         <Button 
                             color="primary" 
-                            size="lg" 
+                            size="lg"
+                            onPress={openContactModal}
                             className="font-bold px-10 py-7 text-lg shadow-xl shadow-primary/40 rounded-full hover:scale-105 transition-transform"
                         >
                             Get In Touch
                         </Button>
-                        <Button 
-                            variant="flat" 
-                            size="lg" 
-                            className="font-bold px-10 py-7 text-lg bg-white/10 text-white hover:bg-white/20 border border-white/20 rounded-full hover:scale-105 transition-transform"
-                        >
-                            View Portfolio
-                        </Button>
+                        <Link href="/Projects">
+                          <Button 
+                              variant="flat" 
+                              size="lg" 
+                              className="font-bold px-10 py-7 text-lg bg-white/10 text-white hover:bg-white/20 border border-white/20 rounded-full hover:scale-105 transition-transform"
+                          >
+                              View Portfolio
+                          </Button>
+                        </Link>
                     </div>
                 </div>
 
